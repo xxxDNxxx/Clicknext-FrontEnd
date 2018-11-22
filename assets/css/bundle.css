@@ -1,0 +1,7 @@
+/*เรียกใช้ css ทั้งหมดจากตรงนี้*/
+@import 'reset.css';
+
+/*Component*/
+
+@import 'sidebar.css';
+@import 'content.css';
