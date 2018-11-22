@@ -1,0 +1,6 @@
+.hide{
+    display: none !important; /* importantจะทับคุณสมบัติอื่นที่เหมือนกัน*/
+}
+.show{
+    display: none !important; /* importantจะทับคุณสมบัติอื่นที่เหมือนกัน*/
+}

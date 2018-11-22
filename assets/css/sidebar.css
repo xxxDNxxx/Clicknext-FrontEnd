@@ -1,4 +1,54 @@
 .sidebar{
+    position: fixed;
     height: 100vh; /*vh = viewport height */
-    background-color: rgb(52.8%, 76.5%, 52.8%);
+    width: 240px;
+    background-color:rgb(98%, 77.1%, 98.7%);
+    z-index:1000;
+    font-size: 1.5rem;
+    color:black;
+}
+
+.sidebar .sidebar-app-name{
+    height: 50px;
+    background-color:rgb(100%, 100%, 100%);
+    line-height: 50px;
+    display: flex;
+    align-items: center;
+}
+.sidebar .sidebar-app-name img {
+    max-width: 100%;
+}
+.sidebar .sidebar-app-name .img-small-layout{
+    display: none;
+}
+.sidebar .sidebar-app-name .img-large-layout{
+    display: block
+}
+/*media query*/
+/*tablet*/
+
+@media (max-width:992px){
+    .sidebar{
+        display: none;
+        
+    }
+    .sidebar .sidebar-app-name .img-small-layout{
+        display: block;
+    }
+    .sidebar .sidebar-app-name .img-large-layout{
+        display: none;
+    }
+}
+/*small*/
+@media (max-width:600px){
+    .sidebar{
+        display: none;
+        width: 240px;
+    }
+    .sidebar .sidebar-app-name .img-small-layout{
+        display: none;
+    }
+    .sidebar .sidebar-app-name .img-large-layout{
+        display: block;
+    }
 }
